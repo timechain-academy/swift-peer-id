@@ -17,9 +17,9 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/timechain-academy/swift-libp2p-crypto.git", from: "main"),
-        .package(url: "https://github.com/timechain-academy/swift-multihash.git", from: "main"),
-        .package(url: "https://github.com/timechain-academy/swift-cid.git", from: "main"),
+        .package(url: "https://github.com/timechain-academy/swift-libp2p-crypto.git", .branch(from: "main")),
+        .package(url: "https://github.com/timechain-academy/swift-multihash.git", .branch(from: "main")),
+        .package(url: "https://github.com/timechain-academy/swift-cid.git", .branch(from: "main")),
         .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", .upToNextMajor(from: "1.12.0"))
     ],
     targets: [
